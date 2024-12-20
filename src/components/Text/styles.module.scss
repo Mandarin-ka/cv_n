@@ -1,0 +1,11 @@
+.text {
+  font-size: 1 px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+
+  &.white {
+    color: #ffffffed;
+  }
+}

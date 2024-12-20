@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: auto;
+}
+
+.sidebar {
+  background-color: #4e090d;
+  padding: 15px 35px 20px 25px;
+  min-height: 100vh;
+  width: 44%;
+
+  ul {
+    margin: 3px 0 20px;
+  }
+}
+
+.wrapper {
+  display: flex;
+}
+
+.main {
+  width: 66%;
+}
+
+.header {
+  display: block;
+  width: 100%;
+  min-height: 290px;
+  background-color: #691b1f;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 50px 10%;
+}
+
+.name {
+  color: white;
+  font-size: 42px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  max-width: 650px;
+  line-height: 38px;
+}
+
+.spec {
+  color: #ffffffdd;
+  font-weight: normal;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 12px;
+  font-style: italic;
+}
+
+.information {
+  padding: 0 20px;
+  .tt {
+    ul {
+      margin-left: 0;
+    }
+  }
+  p {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-weight: 800;
+    letter-spacing: 0.05em;
+  }
+  .t {
+    margin-bottom: 15px;
+    position: relative;
+
+    & h2 {
+      margin-left: 25px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 4px;
+      right: 0;
+      bottom: 0;
+      left: 2px;
+      background-color: #ddd0d0;
+      transform: skew(40deg);
+      width: 11px;
+      height: 11px;
+      z-index: -1;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 15px;
+      right: 0;
+      bottom: 0;
+      left: 2px;
+      background-color: #ddd0d0;
+      transform: skew(-40deg);
+      width: 11px;
+      height: 11px;
+      z-index: -1;
+    }
+  }
+
+  .block {
+    margin: 15px 0;
+
+    &.skills {
+      h2 {
+        text-decoration: underline;
+      }
+    }
+
+    &.skills {
+      .t {
+        h2 {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.photo {
+  img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border: 5px solid white;
+    border-radius: 50%;
+  }
+}
+
+.contacts {
+  p {
+    text-transform: none;
+    font-size: 20px;
+  }
+}

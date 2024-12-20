@@ -1,0 +1,48 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .ul {
+    list-style-type: none;
+    margin-left: 15px;
+
+    .li {
+      position: relative;
+      line-height: 22px;
+      margin: 7px 0;
+    }
+
+    .li::before {
+      content: '• ';
+      color: #ffffffdd;
+      position: absolute;
+      left: -15px;
+      font-size: 20px;
+    }
+  }
+
+  &.black {
+    .ul {
+      .li::before {
+        content: '• ';
+        color: black;
+        position: absolute;
+        left: -15px;
+        font-size: 20px;
+      }
+    }
+  }
+
+  &.decorated {
+    .ul {
+      margin-left: 0;
+    }
+    .ul {
+      .li::before {
+        content: '';
+        display: none;
+      }
+    }
+  }
+}

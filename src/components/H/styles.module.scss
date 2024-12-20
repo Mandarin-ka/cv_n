@@ -1,0 +1,10 @@
+.h {
+  font-size: 25px;
+  color: black;
+  font-weight: normal;
+  text-transform: uppercase;
+
+  &.white {
+    color: #ffffff;
+  }
+}
