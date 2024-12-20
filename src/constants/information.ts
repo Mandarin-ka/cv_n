@@ -53,7 +53,7 @@ export const About = {
 
 export const Contacts = {
   headers: ['Контакты'],
-  data: [['+375 (29) 118-32-26', 'usova.anasteischa@gmail.com', 'г.Минск']],
+  data: [['+375 (29) 534-32-26', 'usova.anasteischa@gmail.com', 'г.Минск']],
 };
 
 export const Projects = {
