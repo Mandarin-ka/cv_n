@@ -55,3 +55,8 @@ export const Contacts = {
   headers: ['Контакты'],
   data: [['+375 (29) 118-32-26', 'usova.anasteischa@gmail.com', 'г.Минск']],
 };
+
+export const Projects = {
+  headers: ['Проекты'],
+  data: [['https://spa-router.vercel.app/', 'https://tdts.vercel.app/']],
+};

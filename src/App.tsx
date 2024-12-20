@@ -1,6 +1,6 @@
 import H from './components/H';
 import List from './components/List';
-import { Experience, About, Skills, Languages, Education, Contacts } from './constants/information';
+import { Experience, About, Skills, Languages, Education, Contacts, Projects } from './constants/information';
 import './styles/styles.scss';
 
 function App() {
@@ -49,9 +49,9 @@ function App() {
           </div>
 
           <div className="block projects">
-            {/* {Skills.headers.map((e, i) => (
-              <List key={i} elements={Skills.data[i]} h={e} textstyle="black" fz={22} />
-            ))} */}
+            {Projects.headers.map((e, i) => (
+              <List key={i} elements={Projects.data[i]} h={e} textstyle="black" fz={22} a={'1'} />
+            ))}
           </div>
         </div>
       </main>
