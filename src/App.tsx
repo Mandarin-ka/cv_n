@@ -2,13 +2,15 @@ import H from './components/H';
 import List from './components/List';
 import { Experience, About, Skills, Languages, Education, Contacts, Projects } from './constants/information';
 import './styles/styles.scss';
+import img from './assets/photo.jpg';
+import Text from './components/Text';
 
 function App() {
   return (
     <div className="wrapper">
       <div className="sidebar">
         <div className="photo">
-          <img src="https://photobooth.cdn.sports.ru/preset/article/7/ef/ae07477224cc2962b0d4b6c53fa55.jpeg" alt="" />
+          <img src={img} alt="" />
         </div>
         <List elements={Experience.data[0]} h={Experience.headers[0]} textstyle="white" />
         <List elements={About.data[0]} h={About.headers[0]} textstyle="white" />
@@ -49,9 +51,26 @@ function App() {
           </div>
 
           <div className="block projects">
-            {Projects.headers.map((e, i) => (
-              <List key={i} elements={Projects.data[i]} h={e} textstyle="black" fz={22} a={'1'} />
-            ))}
+            <div className="t">
+              <H fz={26}>Проекты</H>
+            </div>
+            <ul className="projectUl">
+              {Projects.headers.map((e, i) => (
+                <div className="ttt">
+                  <a href={Projects.refs[i]}>
+                    <H>{e}</H> - <span>{Projects.desc[i]}</span>
+                  </a>
+                  <li className="outterLi">
+                    <h3>Технологии</h3>
+                    {Projects.techs[i].map((e) => (
+                      <li className="innerLi">
+                        <Text>{e}</Text>
+                      </li>
+                    ))}
+                  </li>
+                </div>
+              ))}
+            </ul>
           </div>
         </div>
       </main>

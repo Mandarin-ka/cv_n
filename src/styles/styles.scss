@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+a {
+  color: black;
+
+  &:hover {
+    color: #666;
+  }
+}
+
 .wrapper {
   max-width: 800px;
   margin: auto;
@@ -145,4 +153,32 @@
     text-transform: none;
     font-size: 20px;
   }
+}
+
+h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.outterLi {
+  margin-left: 15px;
+}
+
+.innerLi {
+  margin-left: 20px;
+}
+
+.projectUl {
+  h2 {
+    font-size: 23px;
+  }
+
+  span {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+}
+
+.ttt {
+  margin: 12px 0;
 }

@@ -57,6 +57,23 @@ export const Contacts = {
 };
 
 export const Projects = {
-  headers: ['Проекты'],
-  data: [['https://spa-router.vercel.app/', 'https://tdts.vercel.app/']],
+  headers: ['SPA-Router', 'Todo', 'Brilliant', 'Resume generator'],
+  refs: [
+    'https://spa-router.vercel.app/',
+    'https://tdts.vercel.app/',
+    'https://brilliant-liard.vercel.app/',
+    'https://resume-generator-alpha.vercel.app/',
+  ],
+  desc: [
+    'Приложение для отработки запросов и роутинга',
+    'Приложение "TODO-лист"',
+    'Анимированный алмазик',
+    'Приложение для составления резюме',
+  ],
+  techs: [
+    ['React', 'Node.js', 'Fetch&FakeAPI'],
+    ['React', 'TypeScript', 'JavaScript'],
+    ['JavaScript', 'Phaser.js', 'Анимации', 'Таймеры'],
+    ['HTML', 'CSS', 'JavaScript', 'DOM API'],
+  ],
 };
