@@ -13,11 +13,12 @@
       margin: 7px 0;
     }
 
-    .li::before {
+    .li::after {
       content: '• ';
       color: #ffffffdd;
       position: absolute;
-      left: -15px;
+      right: -15px;
+      top: -2px;
       font-size: 20px;
     }
   }
