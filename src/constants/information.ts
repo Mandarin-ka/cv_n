@@ -9,7 +9,7 @@ export const Languages = {
 };
 
 export const Skills = {
-  headers: ['Hard', 'SOFT'],
+  headers: ['Hard', 'SOFT', 'Additional expertise'],
   data: [
     [
       'Agile, scrum, kanban',
@@ -29,6 +29,7 @@ export const Skills = {
       'Тайм-менеджмент',
       'ведение переговоров',
     ],
+    ['C++, Java, C#, JS/TS', 'JavaScript/TypeScript', 'Node.js', 'Bootstrap', 'Figma', 'React + Redux', 'Vite&webpack', 'Tailwind Css'],
   ],
 };
 
