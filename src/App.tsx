@@ -55,6 +55,18 @@ function App() {
           <h2 className="spec">Project manager</h2>
         </header>
         <div className="information">
+          <div className="block exp">
+            <div className="t">
+              <H fz={26}>work experience</H>
+            </div>
+            {Experience.headers.map((e, i) => (
+              <>
+                <span className="date">{Experience.date[i]}</span>
+                <List key={i} elements={Experience.data[i]} h={e} textstyle="black" fz={22} />
+              </>
+            ))}
+          </div>
+
           <div className="block projects">
             <div className="t">
               <H fz={26}>Projects</H>
@@ -77,18 +89,6 @@ function App() {
                 </div>
               ))}
             </ul>
-          </div>
-
-          <div className="block exp">
-            <div className="t">
-              <H fz={26}>work experience</H>
-            </div>
-            {Experience.headers.map((e, i) => (
-              <>
-                <span className="date">{Experience.date[i]}</span>
-                <List key={i} elements={Experience.data[i]} h={e} textstyle="black" fz={22} />
-              </>
-            ))}
           </div>
         </div>
       </main>
