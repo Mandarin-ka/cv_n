@@ -1,11 +1,16 @@
-export const Education = {
-  headers: ['БГУ, Механико-математический факультет'],
-  data: [['математика и компьютерные науки, 2 курс']],
-};
+import tdimg from './../assets/todo.png';
+import rgimg from './../assets/resGen.png';
+import spaimg from './../assets/spa.png';
+import ttt from './../assets/ttt.png';
 
 export const Languages = {
-  headers: ['Русский', 'Английский B2'],
-  data: [['Родной'], ['Свободное общение, чтение литературы']],
+  headers: [''],
+  data: [['RUSSIAN  —  NATIVE', 'ENGLISH  —  B2+']],
+};
+
+export const Education = {
+  headers: [' BSU, FACULTY OF MECHANICS AND MATHEMATICS'],
+  data: [["BACHELOR'S DEGREE (SEP 2023 — PRESENT)"]],
 };
 
 export const Skills = {
@@ -15,55 +20,75 @@ export const Skills = {
       'Agile, scrum, kanban',
       'JIRA, ASANA, WORKSECTION',
       'MS OFFICE',
-      'Построение финмоделей',
-      'проведение кастдевов',
-      'Анализ данных',
-      'Анализ кода',
+      'FINANCIAL MODELING',
+      'CASTDEV',
+      ' DATA ANALYSIS',
+      ' CODE ANALYSIS',
     ],
+    ['ADAPTIVITY', 'STRATEGIC THINKING', 'TEAMWORK', 'LEADERSHIP SKILLS', 'TIME MANAGEMENT', 'NEGOTIATION'],
     [
-      'Адаптивность',
-      'Умение слушать и слышать',
-      'Стратегическое мышление',
-      'Работа в команде',
-      'Лидерские качества',
-      'Тайм-менеджмент',
-      'ведение переговоров',
+      'C++, Java, C#, JS/TS',
+      'JavaScript/TypeScript',
+      'Node.js',
+      'Bootstrap',
+      'Figma',
+      'React + Redux',
+      'Vite&webpack',
+      'Tailwind Css',
     ],
-    ['C++, Java, C#, JS/TS', 'JavaScript/TypeScript', 'Node.js', 'Bootstrap', 'Figma', 'React + Redux', 'Vite&webpack', 'Tailwind Css'],
   ],
 };
 
 export const Experience = {
-  headers: ['Опыт'],
-  data: [['Организатор хакатонов в стартап-сообществе "мы есть"', 'Трекер стартапов']],
-};
-
-export const About = {
-  headers: ['О себе'],
+  headers: [
+    'PERFECT SYSTEMS ASSISTANT DIRECTOR',
+    'STARTUP COMMUNITY “WE ARE” EXECUTIVE DIRECTOR',
+    `STARTUP COMMUNITY “WE ARE” CHIEF ORGANIZER `,
+  ],
+  date: ['AUG 2024 — PRESENT', 'APR 2024 — AUG 2024', 'JAN 2024 — APR 2024 '],
   data: [
     [
-      'Руководила командой из 10 человек',
-      'Участвовала в переговорах с ЛПР',
-      'Разрабатывала регламенты и ТЗ',
-      'Вела проектную документацию',
-      'Умею работать в условиях динамично меняющихся целей и задач',
-      'Мыслю не проблемами, а решениями',
+      'BUSINESS DOCUMENT MANAGEMENT (OPTIMIZED BY ELECTRONIC SIGNATURES AND DEVELOPED DOCUMENT TEMPLATES)',
+      'ANALYTICAL RESEARCH AND REPORTING',
+      "CONTROL OF THE COMPANY'S CASH FLOW, BUDGET TRACKING (OPTIMIZATION OF PROCESSES IN GOOGLE SHEETS)",
+      'IMPLEMENTED TASK MANAGEMENT SYSTEM IN JIRA',
+      'DISTRIBUTION AND CONTROL OF TASKS BETWEEN 3 DEPARTMENTS',
+      'ORGANIZATION OF 10+ MEETINGS WITH KEY PARTNERS AND CLIENTS',
+    ],
+    [
+      `ORGANIZATION OF 15+ EVENTS FOR AN AUDIENCE OF 20-300 PEOPLE`,
+      `COORDINATION OF A TEAM OF 10+ PARTICIPANTS`,
+      `ATTRACTION OF SPONSORSHIP FUNDS IN THE AMOUNT OF 10 THOUSAND BYN`,
+      `PARTNERSHIP WITH 10+ COMPANIES`,
+      `MAINTAINING A HIGH LEVEL OF PARTICIPANT SATISFACTION (NPS > 8)`,
+    ],
+    [
+      `ORGANIZATION OF 5+ EVENTS FOR AN AUDIENCE OF 20-100 PEOPLE`,
+      `DEVELOPING EVENT CONCEPTS AND TIMELINES`,
+      `COORDINATION OF A TEAM OF 3 PARTICIPANTS`,
+      `FEEDBACK ANALYSIS (GOOGLE FORMS/EXCEL)`,
     ],
   ],
 };
 
 export const Contacts = {
-  headers: ['Контакты'],
-  data: [['+375 (29) 534-32-26', 'usova.anasteischa@gmail.com', 'г.Минск']],
+  headers: ['Contacts'],
+  data: [['+375 (29) 534-32-26', 'usova.anasteischa@gmail.com', 'MINSK, BELARUS']],
 };
 
 export const Projects = {
-  headers: ['SPA-Router', 'Todo', 'Resume generator'],
-  refs: ['https://spa-router.vercel.app/', 'https://tdts.vercel.app/', 'https://resume-generator-alpha.vercel.app/'],
-  desc: ['Приложение для отработки запросов и роутинга', 'Приложение "TODO-лист"', 'Приложение для составления резюме'],
+  headers: ['SPA-Router', 'Todo', 'Resume generator', 'Tic-Tac-Toe'],
+  imgs: [spaimg, tdimg, rgimg, ttt],
+  refs: [
+    'https://spa-router.vercel.app/',
+    'https://tdts.vercel.app/',
+    'https://resume-generator-alpha.vercel.app/',
+    'https://ttt-ten-tau.vercel.app/',
+  ],
   techs: [
     ['React', 'Node.js', 'Fetch&FakeAPI'],
     ['React', 'TypeScript', 'JavaScript'],
     ['HTML', 'CSS', 'JavaScript', 'DOM API'],
+    ['HTML', 'CSS', 'JavaScript'],
   ],
 };
